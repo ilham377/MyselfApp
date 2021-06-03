@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Myself App</string>
+    <string name="title_activity_manu">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_daily">Daily</string>
+    <string name="title_gallery">Gallery</string>
+    <string name="title_music">Music</string>
+    <string name="title_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- home string -->
+    <string name="nama">Nama</string>
+    <string name="nama_val">Muhammad Ilham Apriyadi</string>
+    <string name="nim">NIM</string>
+    <string name="nim_val">10118045</string>
+    <string name="kls">Kelas</string>
+    <string name="kls_val">IF-2</string>
+    <string name="jk">Jenis Kelamin</string>
+    <string name="jk_val">Laki-Laki</string>
+    <string name="TTL">Tempat Tanggal Lahir</string>
+    <string name="TTL_val">Bandung, 18 April 2000</string>
+    <string name="Alamat">Alamat</string>
+    <string name="Alamat_val">Jl. Mendut 4, No M35, RT 02/RW 18, kel. Melong, kec. Cimahi Selatan </string>
+    <string name="Goldar">Golongan Darah</string>
+    <string name="Goldar_val">A</string>
+    <string name="MaK">Makanan Kesukaan</string>
+    <string name="MaK_val">Mie Instan</string>
+    <string name="MiK">Minuman Kesukaan</string>
+    <string name="MiK_val">Macha</string>
+    <string name="hobi">Hobi</string>
+    <string name="hobi_val">Bermain game, Membaca Komik</string>
+    <string name="Lagufav">Lagu Favorit</string>
+    <string name="Lagufav_val">Dry Flower - yuuri</string>
+    <string name="Filmfav">Film Favorit</string>
+    <string name="Filmfav_val">Spider-Man</string>
+    <string name="Pekerjaan">Pekerjaan yang diinginkan setelah kuliah</string>
+    <string name="Pekerjaan_val">programmer</string>
+    //API
+    <string name="map_key" translatable="false">AIzaSyCbanNFdKtyrnGTFafGDl4BCSwZhJEvlLM</string>
+</resources>

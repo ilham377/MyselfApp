@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/slideimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_home_black_24dp"/>
+
+    <TextView
+        android:id="@+id/txthead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HEADING"
+        android:textSize="@dimen/size20"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/dimen20"/>
+
+    <TextView
+        android:id="@+id/txtdesc"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="Menu Home berisikan dengan biodata saya"
+        android:textSize="18dp"
+        android:autoText="true"
+        android:gravity="center"
+        android:padding="@dimen/dimen20"
+        android:layout_marginTop="@dimen/dimen20"/>
+
+</LinearLayout>

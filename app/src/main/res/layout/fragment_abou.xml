@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AbouFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="4"
+        android:columnCount="1">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="@dimen/dimen10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/dimen16">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Me"
+                    android:textSize="@dimen/size20"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:lineHeight="18px"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello, nama saya Muhammad Ilham Apriyadi"
+                    android:textSize="@dimen/dimen14"
+                    android:layout_marginLeft="16dp"
+                    android:lineHeight="18px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="biasa di panggil ham atau ilham, berusia 21 tahun,"
+                    android:textSize="@dimen/dimen14"
+                    android:layout_marginLeft="16dp"
+                    android:lineHeight="18px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dan saya kuliah di Universitas Komputer Indonesia"
+                    android:textSize="@dimen/dimen14"
+                    android:layout_marginLeft="16dp"
+                    android:lineHeight="18px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mengambil Jurusan Teknik Informatika."
+                    android:textSize="@dimen/dimen14"
+                    android:layout_marginLeft="16dp"
+                    android:lineHeight="18px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aplikasi ini di buat untuk memenuhi tugas"
+                    android:textSize="@dimen/dimen14"
+                    android:layout_marginLeft="16dp"
+                    android:lineHeight="18px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pengganti Ujian Tengah Semester dari mata kuliah"
+                    android:textSize="@dimen/dimen14"
+                    android:layout_marginLeft="16dp"
+                    android:lineHeight="18px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aplikasi Komputer Bergerak."
+                    android:textSize="@dimen/dimen14"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="@dimen/dimen16"
+                    android:lineHeight="18px"/>
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="@dimen/dimen10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:textSize="@dimen/size20"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:lineHeight="18px"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/dimen16"
+                android:layout_marginRight="@dimen/dimen16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number :"
+                    android:textSize="@dimen/dimen14"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="16dp"
+                    android:lineHeight="18px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="081394584130"
+                    android:textSize="@dimen/dimen14"
+                    android:layout_marginLeft="16dp"
+                    android:lineHeight="18px"/>
+
+                <Button
+                    android:id="@+id/call_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="Call Me"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:backgroundTint="@color/white"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp"
+                    android:layout_marginLeft="@dimen/dimen16"
+                    android:layout_marginTop="2dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gmail :"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/dimen14"
+                    android:layout_marginLeft="16dp"
+                    android:lineHeight="18px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ilham377@gmail.com"
+                    android:textSize="@dimen/dimen14"
+                    android:layout_marginLeft="16dp"
+                    android:lineHeight="18px"/>
+
+                <Button
+                    android:id="@+id/email_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="Send Messege"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:backgroundTint="@color/white"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp"
+                    android:layout_marginLeft="@dimen/dimen16"
+                    android:layout_marginTop="2dp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="@dimen/dimen10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Social Media"
+                android:textSize="@dimen/size20"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:lineHeight="18px"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/dimen16"
+                android:layout_marginRight="@dimen/dimen16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btntwitter"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/twitter"
+                    android:background="@drawable/round_corner"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/round_corner"
+                    android:src="@drawable/youtube"
+                    android:id="@+id/btnyoutube"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/round_corner"
+                    android:src="@drawable/facebook"
+                    android:id="@+id/btnfacebook"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="@dimen/dimen10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About"
+                    android:textSize="@dimen/size20"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:lineHeight="18px"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/dimen16"
+                    android:layout_marginRight="@dimen/dimen16"
+                    android:layout_marginLeft="@dimen/dimen16">
+
+                    <Button
+                        android:id="@+id/btn_about"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="About"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        android:backgroundTint="@color/white"
+                        app:strokeColor="@color/black"
+                        app:strokeWidth="2dp"
+                        android:layout_marginLeft="@dimen/dimen16"
+                        android:layout_marginTop="2dp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+    </ScrollView>
+</FrameLayout>
