@@ -1,17 +1,23 @@
 package com.iapps.myselfapp;
 
-import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
-import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.iapps.myselfapp.Adapter.ListHomeAdapter;
+import com.iapps.myselfapp.Adapter.ListNamaAdapter;
+import com.iapps.myselfapp.DummyData.Nama;
+import com.iapps.myselfapp.DummyData.Profile;
+import com.iapps.myselfapp.Entity.nama;
+import com.iapps.myselfapp.Entity.profile;
 import com.iapps.myselfapp.viewModel.profileVM;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -22,6 +28,10 @@ public class Home extends Fragment {
 
     private View view;
     private profileVM viewModel;
+    private RecyclerView rvNama;
+    private RecyclerView rvProfile;
+    private ArrayList<nama> list = new ArrayList<>();
+    private ArrayList<profile> list2 = new ArrayList<>();
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -68,7 +78,9 @@ public class Home extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_home, container, false);
-        viewModel = ViewModelProviders.of((FragmentActivity) getContext()).get(profileVM.class);
+
+        //getActivity() error
+        /**viewModel = ViewModelProviders.of(getActivity()).get(profileVM.class);
 
         //dao.insert(new homeProfile(1, "Bandung, 16 April 2000", "Muhammad Ilham Apriyadi" ,"Jl. Mendut 4, No M35, RT02/RW18, Kel. Melong, Kec. Cimahi Selatan","Laki-laki","A","10118045","Sayur Bayam","Macha","Ghost - Hoshimachi Suisei","Spider-Man","Bermain game, Membaca komik"));
         TextView nama = view.findViewById(R.id.tv_nama);
@@ -95,7 +107,32 @@ public class Home extends Fragment {
         makanan.setText(viewModel.getProfile().getMakanan());
         minuman.setText(viewModel.getProfile().getMinuman());
         hobi.setText(viewModel.getProfile().getHoby());
+         **/
+
+        rvNama = view.findViewById(R.id.rv_nama);
+        rvProfile = view.findViewById(R.id.rv_bio);
+        rvNama.setHasFixedSize(true);
+        rvProfile.setHasFixedSize(true);
+        list.addAll(Nama.getListData());
+        list2.addAll(Profile.getListData());
+        ShowlistHome();
+        ShowlistNama();
+
+
 
         return view;
+    }
+
+    void ShowlistNama(){
+        //rvNama.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false));
+        rvNama.setLayoutManager(new LinearLayoutManager(getActivity()));
+        ListNamaAdapter listNamaAdapter = new ListNamaAdapter(list);
+        rvNama.setAdapter(listNamaAdapter);
+    }
+
+    void ShowlistHome(){
+        rvProfile.setLayoutManager(new LinearLayoutManager(getActivity()));
+        ListHomeAdapter listHomeAdapter = new ListHomeAdapter(list2);
+        rvProfile.setAdapter(listHomeAdapter);
     }
 }
