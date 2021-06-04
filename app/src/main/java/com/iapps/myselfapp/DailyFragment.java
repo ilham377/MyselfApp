@@ -11,7 +11,10 @@ import android.view.ViewGroup;
 
 import com.google.android.material.tabs.TabLayout;
 
-
+//tgl pengerjaan : 30/05/2021
+//Nim : 10118045
+//Nama : Muhammad Ilham Apriyadi
+//Kelas : IF2/S1/VI
 public class DailyFragment extends Fragment {
 
     private ViewPager viewPager;

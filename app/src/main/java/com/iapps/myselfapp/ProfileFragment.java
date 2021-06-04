@@ -12,6 +12,10 @@ import android.view.ViewGroup;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.tabs.TabLayout;
 
+//tgl pengerjaan : 24/05/2021
+//Nim : 10118045
+//Nama : Muhammad Ilham Apriyadi
+//Kelas : IF2/S1/VI
 public class ProfileFragment extends Fragment {
 
     private ViewPager viewPager;

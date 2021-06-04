@@ -19,7 +19,10 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-
+//tgl pengerjaan : 29/05/2021
+//Nim : 10118045
+//Nama : Muhammad Ilham Apriyadi
+//Kelas : IF2/S1/VI
 public class GalleryFragment extends Fragment {
 
     View view;

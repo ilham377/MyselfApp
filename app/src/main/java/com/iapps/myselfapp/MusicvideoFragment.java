@@ -10,7 +10,10 @@ import android.view.ViewGroup;
 
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
-
+//tgl pengerjaan : 02/06/2021
+//Nim : 10118045
+//Nama : Muhammad Ilham Apriyadi
+//Kelas : IF2/S1/VI
 public class MusicvideoFragment extends Fragment {
 
 

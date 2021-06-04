@@ -11,6 +11,10 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+//tgl pengerjaan : 03/06/2021
+//Nim : 10118045
+//Nama : Muhammad Ilham Apriyadi
+//Kelas : IF2/S1/VI
 public class WalkthroughActivity extends AppCompatActivity {
 
     private ViewPager viewPager;

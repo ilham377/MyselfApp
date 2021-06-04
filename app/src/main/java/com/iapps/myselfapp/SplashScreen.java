@@ -12,12 +12,12 @@ import android.widget.TextView;
 import java.util.Timer;
 import java.util.TimerTask;
 
+//tgl pengerjaan : 16/05/2021
+//Nim : 10118045
+//Nama : Muhammad Ilham Apriyadi
+//Kelas : IF2/S1/VI
 public class SplashScreen extends AppCompatActivity {
 
-    //tgl : 16/05/2021
-    //NIM : 10118045
-    //Nama: Muhammad Ilham Apriyadi
-    //Kls : IF-2
 
 
     Timer timer;
