@@ -18,6 +18,10 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+//tgl pengerjaan : 25/05/2021
+//Nim : 10118045
+//Nama : Muhammad Ilham Apriyadi
+//Kelas : IF2/S1/VI
 public class FindMeFragment extends Fragment {
 
     private OnMapReadyCallback callback = new OnMapReadyCallback() {

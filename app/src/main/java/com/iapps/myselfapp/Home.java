@@ -24,6 +24,11 @@ import java.util.ArrayList;
  * Use the {@link Home#newInstance} factory method to
  * create an instance of this fragment.
  */
+
+//tgl pengerjaan : 04/06/2021
+//Nim : 10118045
+//Nama : Muhammad Ilham Apriyadi
+//Kelas : IF2/S1/VI
 public class Home extends Fragment {
 
     private View view;

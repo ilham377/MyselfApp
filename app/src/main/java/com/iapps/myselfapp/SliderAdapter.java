@@ -16,6 +16,10 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.zip.Inflater;
 
+//tgl pengerjaan : 03/06/2021
+//Nim : 10118045
+//Nama : Muhammad Ilham Apriyadi
+//Kelas : IF2/S1/VI
 public class SliderAdapter extends PagerAdapter {
 
     Context context;
